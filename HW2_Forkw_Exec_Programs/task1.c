@@ -9,12 +9,10 @@ int main()
 
     if (ret == 0) {
         execl("/bin/ls", "ls", NULL);
-
     }
     else {
         wait(NULL);
         printf("Parent process done\n");
-    }
-	
+    }	
     return 0;
 }
